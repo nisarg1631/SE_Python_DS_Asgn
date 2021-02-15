@@ -17,19 +17,16 @@ def experiment(annotation_file, detector, transforms, outputs):
     """
 
     # Create the instance of the dataset.
-
+    data = Dataset(annotation_file, transforms)
     # Iterate over all data items.
-
     # Get the predictions from the detector.
-
     # Draw the boxes on the image and save them.
-
     # Do the required analysis experiments.
 
 
 def main():
     detector = ObjectDetectionModel()
-    experiment('./data/annotations.jsonl', detector, [FlipImage(), BlurImage()],
+    experiment('data/annotations.jsonl', detector, [FlipImage(), BlurImage(5)],
                None)  # Sample arguments to call experiment()
 
 
