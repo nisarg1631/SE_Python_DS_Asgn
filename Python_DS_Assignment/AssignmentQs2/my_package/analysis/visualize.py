@@ -9,7 +9,7 @@ def plot_boxes(img, bboxes, labels, output):  # Write the required arguments
         ImageDraw.Draw(img).rectangle(bboxes[i], outline='red', width=4)
     for i in range(min(5, len(bboxes))):
         ImageDraw.Draw(img).text(bboxes[i][0], labels[i], fill='yellow'
-                                 , font=ImageFont.truetype('/usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf', size=20)
+                                 #, font=ImageFont.truetype('/usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf', size=20)
                                  # uncomment above line to set custom font from system
                                  )
     img.save(output)
