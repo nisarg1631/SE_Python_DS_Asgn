@@ -1,5 +1,15 @@
 # Software Lab 
 
+Name: Nisarg Upadhyaya
+
+Roll No: 19CS30031
+
+Package: https://test.pypi.org/project/my-package-19CS30031/0.0.1/
+
+```
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps my-package-19CS30031
+```
+
 ## Python Datascience Assignment
 
 In this assignment we will deal with **Object detection**. Object detection is a very well studied task of Deep Learning, having tremendous variety of applications. You have to create a python package for transforming images and analysing their effect on the predictions of an object detector. We are providing you with a pretrained object detector, all you need to do is to call the detector on the image and get the outputs.
