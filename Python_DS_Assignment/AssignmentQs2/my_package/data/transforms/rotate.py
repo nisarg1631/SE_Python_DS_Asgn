@@ -23,4 +23,4 @@ class RotateImage(object):
             image (numpy array or PIL image)
         """
 
-        return sample.rotate(self.degrees, expand=1)
+        return sample.rotate(self.degrees)

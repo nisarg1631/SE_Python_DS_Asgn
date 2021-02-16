@@ -9,7 +9,7 @@ class Dataset(object):
         A class for the dataset that will return data items as per the given index
     """
 
-    def __init__(self, annotation_file, transforms=None):
+    def __init__(self, annotation_file, transforms=[]):
         """
             Arguments:
             annotation_file: path to the annotation file
